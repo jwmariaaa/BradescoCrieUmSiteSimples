@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<!-- cabeçalho gerado por html:5 -->
+
+<html lang="en">
+<!-- lang="en" define o idioma da página como inglês -->
+
+<head>
+    <!-- cabeçalho do site (configurações, não aparece na tela) -->
+
+    <meta charset="UTF-8">
+    <!-- meta: marca que indica informações de metadados que não vão ficar visíveis na página. UTF-8 pode parecer insignificante, mas é crucial para estabelecer o modo como os computadores interpretam caracteres -->
+
+    <title>Simple website</title>
+    <!-- título que aparece na aba do navegador -->
+
+    <link rel="stylesheet" href="main.css">
+    <!-- conecta o arquivo do CSS ao HTML -->
+</head>
+
+<body class="light-theme">
+<!-- Corpo do site. começa com o tema claro ativado -->
+
+    <h1>Task List</h1>
+    <!-- Título principal da página. h1 é o maior dos títulos -->
+
+    <p id="msg">Current tasks</p>
+    <!-- p = paragrafo. id="msg"= identificador unico de elemento -->
+
+    <ul>
+        <!-- Lista não ordenada. ao contrario da ordenada, esse utiliza quadradinhos para a lista -->
+        <li class="list">Add visual styles</li>
+        <!-- Item (li) da lista com estilo especial -->
+
+        <li class="list">Add light and dark themes</li>
+        <!-- Outro item com quadradinho -->
+
+        <li>Enable switching the theme</li>
+        <!-- Item normal, sem classe -->
+    </ul>
+
+    <div>
+        <!-- Container do botão. container generico para organizar elementos -->
+        <button class="btn">Dark</button>
+        <!-- Botão que troca o tema -->
+    </div>
+
+    <script src="app.js"></script>
+    <!-- Importa o JavaScript -->
+
+    <noscript>
+        You need to enable JavaScript to view the full site
+    </noscript>
+<!-- Mensagem exibida se o JavaScript estiver desativado no navegador -->
+
+</body>
+</html>
+
+<!-- Um atributo de ID (usado no <p>) pode ser empregado para estilizar um elemento, enquanto o atributo de classe (usado no <li>) é usado para estilizar todos os elementos da mesma classe. Cada elemento <li> de item de lista é agrupado em uma lista não ordenada <ul>.-->
+<!--ID e seletores de classe permitem aplicar estilos a nomes de atributos personalizados em seu HTML.
+
+Uma ID é usada para definir o estilo de um elemento, enquanto classes podem definir o estilo de vários elementos.-->
+<!--Os atributos personalizados são chamados de .list e #msg.
+
+A lista do seletor de classe tem um prefixo de período,
+
+enquanto o seletor de ID é msg e tem um prefixo de sinal de libra.
+
+Os nomes são arbitrários, desde que eles correspondam ao que você definiu no HTML.-->

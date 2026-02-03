@@ -1,0 +1,134 @@
+/* 
+O seletor * significa "TODOS os elementos da página"
+Tudo que estiver aqui vai valer pra tudo
+*/
+* {
+    color: var(--fontColor); 
+    /* Cor do texto vem de uma variável que muda conforme o tema */
+
+    font-family: helvetica;
+    /* Define a fonte padrão do site. A propriedade e o valor juntos formam um par chave-valor. */
+}
+
+/* 
+Estilo aplicado somente ao body (corpo da página)
+*/
+body {
+    background: var(--bg);
+    /* A cor de fundo usa uma variável que muda com o tema */
+}
+
+/* 
+Estilo da lista não ordenada <ul>
+*/
+ul {
+    font-family: helvetica;
+    /* Define a fonte da lista */
+}
+
+/* 
+Estilo padrão de TODOS os <li>
+*/
+li {
+    list-style: circle;
+    /* Define bolinhas redondas nos itens da lista */
+}
+
+/* 
+Itens que possuem a classe "list"
+*/
+.list {
+    list-style: square;
+    /* Troca a bolinha redonda por quadrado */
+}
+
+/* 
+Elemento que possui id="msg"
+*/
+#msg {
+    font-family: monospace;
+    /* Fonte estilo terminal / computador antigo */
+}
+
+/* TEMA CLARO*/
+.light-theme {
+    --bg: var(--green);
+    /* Fundo verde */
+
+    --fontColor: var(--black);
+    /* Texto preto */
+
+    --btnBg: var(--black);
+    /* Fundo do botão preto */
+
+    --btnFontColor: var(--white);
+    /* Texto do botão branco */
+}
+
+/*  TEMA ESCURO*/
+.dark-theme {
+    --bg: var(--black);
+    /* Fundo preto */
+
+    --fontColor: var(--green);
+    /* Texto verde */
+
+    --btnBg: var(--white);
+    /* Fundo do botão branco */
+
+    --btnFontColor: var(--black);
+    /* Texto do botão preto */
+}
+
+/* O seletor de :root representa o elemento <html> na página HTML (GLOBAL). Para esse tipo de tarefa, uma melhor prática é definir um conjunto de variáveis CSS globais no elemento :root.
+*/
+:root {
+    --green: #00FF00;
+    /* Cor verde */
+
+    --white: #ffffff;
+    /* Cor branca */
+
+    --black: #000000;
+    /* Cor preta */
+}
+
+/* 
+Classe do botão
+*/
+.btn {
+    color: var(--btnFontColor);
+    /* Cor do texto do botão */
+
+    background-color: var(--btnBg);
+    /* cor de fundo do botão */
+
+    position: absolute;
+    /* deixa posicionar o botão em qualquer lugar da tela */
+
+    top: 20px;
+    /* Distância do topo da tela */
+
+    left: 250px;
+    /* Distância da esquerda da tela */
+
+    height: 50px;
+    /* Altura do botão */
+
+    width: 50px;
+    /* Largura do botão */
+
+    border-radius: 50%;
+    /* Deixa o botão totalmente redondo */
+
+    border: none;
+    /* Remove a borda padrão do botão */
+}
+
+/* 
+Quando o botão está em foco (clicado)
+*/
+.btn:focus {
+    outline-style: none;
+    /* Remove a borda azul padrão ao clicar */
+}
